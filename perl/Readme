@@ -1,0 +1,32 @@
+Perl脚本是带有.pl后缀的文本文件。
+下面是helloworld.pl的全部内容：
+
+use strict;
+use warnings;
+
+print "Hello world";
+Perl脚本由Perl解释器解释执行，perl或者perl.exe：
+
+perl helloworld.pl [arg0 [arg1 [arg2 ...]]]
+
+
+//--------------
+变量
+Perl的变量有三种类型：标量（scalar）、数组（array）和哈希（hashes）（译者注：下文会继续使用英文原文scalar、array和hash），每种类型都有属于自己的符号：分别是$、@和%。变量定义使用my关键字，生命期直到其所在的代码块结束或者文件的末尾。
+
+
+//--------------
+用.运算符进行字符串连接（与PHP一样）：
+my $string = "world";
+print "Hello ".$string; # "Hello world"
+
+
+
+//--------------------
+内置函数-e用于测试文件是否存在。
+内置函数-d用于测试文件是否是目录。
+内置函数-f用于测试文件是否是普通文件
+
+ print CSH "if( -e $log) then\n";
+ print CSH "rm -f $log\n";
+
